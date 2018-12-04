@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Digital Cinema at NAIT</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- webp polyfill, activated in browsers without webp support -->
+    <script>(function(){var WebP=new Image();WebP.onload=WebP.onerror=function(){
+    if(WebP.height!=2){var sc=document.createElement('script');sc.type='text/javascript';sc.async=true;
+    var s=document.getElementsByTagName('script')[0];sc.src='js/webpjs-0.0.2.min.js';s.parentNode.insertBefore(sc,s);}};
+    WebP.src='data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';})();</script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_purple.min.css" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><img src="./images/nait-logo.svg" alt="NAIT Logo"></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#videoSection">Video</a>
+          <a class="mdl-navigation__link" href="#descriptionSection">Roles in Cinema</a>
+          <a class="mdl-navigation__link" href="#alumniSection">Notable Alumni</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <header>
+            <div class="headerTitle">
+              <h1>Digital Cinema</h1>
+              <h4>at NAIT</h4>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onclick="document.querySelector('#videoSection').scrollIntoView({behavior:'smooth'});">
+              <i class="material-icons">arrow_downward</i>
+            </button>
+          </header>
+          <section id="videoSection">
+            <video class="mdl-shadow--4dp" width="1280" height="720" poster="poster.jpg" controls>
+              <source src="SampleVideo_1280x720_30mb.mp4" type="video/mp4">
+              Your browser does not support this feature!
+            </video>
+          </section>
+          <section id="descriptionSection">
+            <div class="wrapperDiv">
+              <table>
+                <tr>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/producer.webp" alt="producer holding green tin can">
+                    <h2>Producer</h2>
+                    <p>Coordinates effective, creative and collaborative management of priorities, such as selecting the script; coordinating writing, directing and editing; and arranging financing.</p>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/director.webp" alt="director holding clapper board">
+                    <h2>Director</h2>
+                    <p>Directs the artistic and dramatic aspects of a film or script. Responsible for giving direction to the crew and actors to fulfill the creative vision. Directors must be able to mediate differences in creative visions and stay within budget.</p>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/screenwriter.webp" alt="woman on chair typing screenplay">
+                    <h2>Screenwriter</h2>
+                    <p>Writes screenplays or scripts on which films, television programs videogames or any other mass media are based.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/cinematographer.webp" alt="camera lens and shutter">
+                    <h2>Director of Photography</h2>
+                    <p>Oversees the camera and lighting crews working on film, television production or any other mass media. A cinematographer is responsible for artistic and technical decisions related to camera work or lighting such as, film stock, lenses and filters.</p>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/editor.webp" alt="timeline in video editing software">
+                    <h2>Film Editor</h2>
+                    <p>Works alongside producers/directors to remove unneeded or unwanted sections of a film and to fit the pieces of a film together to create the finished product.</p>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/audio.webp" alt="audio mixing board">
+                    <h2>Sound Technician</h2>
+                    <p>Responsible for assembling, operating and maintaining technical equipment used in recording, amplifying and reproducing sound. Sound Technicians identify the sound requirements for the production and act to ensure they can produce that sound.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/lighting.webp" alt="man lit by neon lights">
+                    <h2>Lighting Technician</h2>
+                    <p>Responsible for rigging the stage and location sets as well as controlling lights for production. Lighting technicians work with the cinematographer to ensure the cinematographer’s vision for lighting becomes a reality.</p>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/role-photos/streamer.webp" alt="twitch tv logo">
+                    <h2>Online Streamer</h2>
+                    <p>A self-published content creator who primarily distributes their media through the internet. Responsible for their own lighting, sound, editing and cinematography.</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section id="alumniSection">
+            <h1>Notable Alumni</h1>
+            <div class="wrapperDiv">
+              <table>
+                <tr>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/jland.webp" alt="man lit by neon lights">
+                    <h2>Jarred Land</h2>
+                    <p>Graduating in 1995 from NAIT, Jarred Land is a Producer, Cinematographer and Businessman. Jarred is the founder and operator of one of the largest digital camera movie making communities in the world, DVXuser.com. Jarred is also the current President of Red Digital Cinema, one of the largest players in digital camera technologies used worldwide on films such as, Guardians of the Galaxy Vol. 2, 300: Rise of an Empire and the television medical drama ER.</p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="window.open(&quot;https://www.imdb.com/name/nm1394135/&quot;);">
+                      More info at IMDb
+                    </button>
+                  </td>
+                  <td>
+                    <img class="mdl-shadow--8dp" src="./images/bwoloshyn.webp" alt="twitch tv logo">
+                    <h2>Bruce Woloshyn</h2>
+                    <p>Bruce Woloshyn is a Digital Effects Artist and Supervisor. Since graduating from NAIT in 1984, Bruce has gone on to lead a successful career working on the visual effects for films such as Skyscraper and Night at the Museum. Bruce’s first major project was working on the visual effects for Stargate SG-1 and Stargate Atlantis, for which he received the Gemini Award for Best Visual Effects. Bruce currently works as the Visual Effects Supervisor for Method Studios.</p>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="window.open(&quot;https://www.imdb.com/name/nm0004374/&quot;);">
+                      More info at IMDb
+                    </button>
+                  </td>
+                </tr>
+              </table>
+          </section>
+        </div>
+      </main>
+    </div>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
