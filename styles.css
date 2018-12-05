@@ -192,3 +192,18 @@ display: none;
   border-top: 2px solid #d6d6d5;
   text-align: center;
 }
+
+footer {
+  padding: 64px 0 64px 0;
+  background: #005cab;
+  text-align: center;
+}
+
+footer h2 {
+  color: white;
+  font-size: 64px;
+}
+
+footer p {
+  color: white;
+}
